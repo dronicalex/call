@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+
+
+
+</header>
+			<main class="page">
+				<div class="calculator">
+					<p>Рассчитайте стоимость хранения </p>
+
+					<form action="" class="formone">
+						<div class="calculator__img"><img src="img/d.png" alt=""></div>
+						<div class="calculator__content">
+							<div class="param">
+								<label for="dlina">Длина</label>
+								<input type="number" id="dlina">
+								<label for="shirina">Ширина</label>
+								<input type="number" id="shirina">
+								<label for="visota">Высота</label>
+								<input type="number" id="visota">
+								<div class="sel">
+									<label for="">единица измерения</label>
+									<select name="" id="select">
+										<option value="sm" selected="selected">см</option>
+										<option value="m">м</option>
+									</select>
+								</div>
+
+							</div>
+							<div class="count">
+								<label for="count">кол-во штук</label>
+								<input type="number" id="count">
+								<label for="days">кол-во дней</label>
+								<input type="number" id="days">
+								<div class="calk">рассчитать</div>
+							</div>
+						</div>
+					</form>
+					<div class="calculator__info"> Цена за хранение <span class="kub"></span> м3 составляет: <span class="num">10</span> тенге</div>
+				</div>
+
+
+				<div class="calkdop">
+					<p>Расчет базового тарифа</p>
+					<form action="">
+						<div class="form-wrapper">
+							<div class="input-wrapper">
+								<label for="tov2">введите количество товаров:</label>
+								<input type="number" id="tov2">
+							</div>
+							<div class="input-wrapper _raddd">
+								<div>рассчитать стоимость доставки:</div>
+								<div class="_wpp">
+									<div class="_wp"><input type="radio" id="cec2" name="yes"><label for="cec2"> да</label> </div>
+									<div class="_wp"><input type="radio" id="cec3" name="yes" checked><label for="cec3">нет</label></div>
+								</div>
+							</div>
+							<div class="input-wrapper _opas">
+								<label for="ves2">введите вес одной единицы товара <select name="" id="sellll">
+										<option value="gr" selected>грамм</option>
+										<option value="kgg">кг</option>
+									</select>:</label>
+								<input type="number" id="ves2">
+							</div>
+						</div>
+						<div class="buttonn">рассчитать</div>
+						<div class="values">
+							<div class="values__item">
+								<div class="values__title">Прием <br> вашего товара</div>
+								<img src="img/onee.png" alt="">
+								<div class="values__count"> ваша цена: <span id="one">0</span> тенге</div>
+								<div class="values__text"> 20 тенге за 1 штуку</div>
+							</div>
+
+
+							<div class="values__item">
+								<div class="values__title">Комплектация <br> вашего товара</div>
+
+								<img src="img/twoo.png" alt="">
+
+								<div class="values__count">ваша цена: <span id="two">0</span> тенге</div>
+								<div class="values__text"> 960 тенге за 1 заказ (если в заказе более 1 товара, то цена за каждую дополнительную единицу 120 тенге)</div>
+								<div class="values__sub-title">
+									сборка заказа, упаковка, упаковочный материал, доупаковочный материал, присвоение и нанесение штрих кода (стикеровка), передача заказа на доставку
+								</div>
+
+							</div>
+
+
+							<div class="values__item">
+								<div class="values__title">Доставка <br> вашего товара</div>
+								<img src="img/three.png" alt="">
+								<div class="values__count"> ваша цена: <span id="thre">0</span> тенге (<span id="kg">0</span> кг)</div>
+								<div class="values__text">
+									<ul>
+										<li>до 3кг - 700 тенге за заказ</li>
+										<li>до 7кг - 900 тенге за заказ</li>
+										<li>до 10кг - 1200 тенге за заказ</li>
+										<li>до 15кг - 1500 тенге за заказ</li>
+										<li>до 30кг - 4000 тенге за заказ</li>
+									</ul>
+								</div>
+								<div class="values__sub-title">Доставка товара осуществляется до складов маркетплейсов</div>
+							</div>
+						</div>
+						<div class="itog">Ваша итоговая стоимость составляет: <span id="itog">0</span> тенге</div>
+					</form>
+				</div>
+			</main>
+			<footer class="footer">
+	<div class="footer__container _container">
+
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+</html>
